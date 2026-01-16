@@ -1,5 +1,5 @@
 import Image from "next/image";
-// import PatientCard from "./components/PatientCard";
+import PatientCard from "./components/PatientCard";
 
 export default function Home() {
   return (
@@ -60,7 +60,7 @@ export default function Home() {
             Documentation
           </a>
         </div>
-        {/* <PatientCard name="John Doe" lastVisit="2026-01-15" /> */}
+        <PatientCard name="John Doe" lastVisit="2026-01-15" />
       </main>
     </div>
   );
