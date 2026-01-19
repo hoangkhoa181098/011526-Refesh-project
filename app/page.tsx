@@ -27,12 +27,18 @@ export default function Home() {
               <h2 className="font-semibold">{p.name}</h2>
               <p className="text-sm text-gray-500">Status: {p.status}</p>
             </div>
-            {p.status !== 'Completed' && (
+            {p.status !== 'Completed' ? (
               <button
                 onClick={() => checkIn(p.id)}
                 className="bg-blue-600 text-white px-4 py-1 rounded-lg text-sm"
               >
                 Check In
+              </button>
+            ) : (
+              <button
+                className="bg-gray-600 text-white px-4 py-1 rounded-lg text-sm"
+              >
+                Checked In
               </button>
             )}
           </div>
